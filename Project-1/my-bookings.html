@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Bookings – Garden of Wishes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/effects.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="pastel-bg">
+
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">
+<img src="images/GOW-logo.png" alt="Garden of Wishes logo">
+      <h2>Garden of Wishes</h2>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About</a></li>
+      <li><a href="contact-us.html">Contact</a></li>
+      <li><a href="plant.html">Book Visit</a></li>
+      <li><a class="active" href="my-bookings.html">My Booking</a></li>
+      <li>
+        <label class="dark-toggle">
+          <input type="checkbox" id="darkSwitch"> Dark
+        </label>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<main class="booking-login-layout">
+
+  <!-- LOGIN CARD -->
+  <section class="login-card">
+    <h2 class="form-title">Check Your Bookings</h2>
+    <p class="form-desc">Enter your name & phone number to view your reservations 🌸</p>
+
+    <input type="text" id="loginName" class="lookup-input" placeholder="Your Name">
+    <input type="text" id="lookupPhone" class="lookup-input" placeholder="Phone Number">
+
+    <button id="lookupBtn" class="btn primary">Show My Bookings</button>
+  </section>
+
+  <!-- RESULTS (TABLE / CARDS) -->
+  <section id="bookingResults" class="booking-results-area"></section>
+
+  <!-- YOUR PERSONAL VIRTUAL GARDEN (تحت الحجوزات) -->
+  <section class="my-garden-section">
+    <h2 class="garden-title">Your Virtual Garden</h2>
+    <div id="myGarden" class="virtual-garden"></div>
+  </section>
+
+</main>
+
+
+
+<footer>
+  <p>© 2025 Garden of Wishes</p>
+</footer>
+
+</body>
+</html>

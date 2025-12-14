@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Book Visit – Garden of Wishes</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Scripts -->
+  <script src="js/effects.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="pastel-bg">
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/GOW-logo.png" alt="Garden of Wishes logo">
+        <h2>Garden of Wishes</h2>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+        <li><a class="active" href="plant.html">Book Visit</a></li>
+        <li><a href="my-bookings.html">My Booking</a></li>
+        <li>
+          <label class="dark-toggle">
+            <input type="checkbox" id="darkSwitch">
+            Dark
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="plant-layout">
+
+    <!-- Virtual Garden -->
+    <section class="garden-box">
+      <h2 class="garden-title">Your Virtual Garden</h2>
+      <div id="garden" class="virtual-garden"></div>
+      <button id="waterBtn" class="btn water-btn">💧 Water Magic</button>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="plant-form-card">
+      <h2 class="form-title">Book Your Flower Farm Visit</h2>
+      <p class="form-desc">Choose your flower and visit time ✨</p>
+
+      <form id="plantForm" class="form-grid">
+
+        <label>
+          Full Name
+          <input
+            type="text"
+            id="name"
+            required
+            minlength="3"
+            maxlength="40"
+          >
+        </label>
+
+        <label>
+          Phone Number
+          <input
+            type="tel"
+            id="phone"
+            required
+            pattern="^05[0-9]{8}$"
+            maxlength="10"
+            placeholder="05xxxxxxxx"
+          >
+        </label>
+
+        <label>
+          Flower Type
+          <select id="flower_type" required>
+            <option value="">-- Select Flower --</option>
+            <option value="Red Rose">Red Rose</option>
+            <option value="Sunflower">Sunflower</option>
+            <option value="Lavender">Lavender</option>
+            <option value="Mixed">Mixed</option>
+          </select>
+        </label>
+
+        <label>
+          Quantity
+          <input type="number" id="quantity" min="1" max="10" required>
+        </label>
+
+        <label>
+          Visit Date
+          <input type="date" id="date" required>
+        </label>
+
+        <label>
+          Time Slot
+          <select id="time_slot" required>
+            <option value="">-- Select Time --</option>
+            <option value="8:00 AM">8:00 AM</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+          </select>
+        </label>
+
+        <label class="full-width">
+          Notes (optional)
+          <textarea id="notes"></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Plant My Flower</button>
+
+        <p id="plantMsg" class="form-response"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Garden of Wishes</p>
+  </footer>
+
+</body>
+</html>

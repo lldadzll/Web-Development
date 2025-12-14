@@ -30,5 +30,9 @@ to view their bookings using their name and phone number.
 - plant.html
 - my-bookings.html
 
+## Backend
+Backend files were used for local testing and will be added later.
+
+
 ## Author
 - Ahad Alasmari
